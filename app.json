@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Sandwich Sudoku - Brain Puzzle",
+    "slug": "sandwich-sudoku",
+    "version": "1.0.5",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icons/app-icon.png",
+    "android": {
+      "versionCode": 6,
+      "package": "com.sandwichsudokupuzzle.app",
+      "permissions": [
+        "com.android.vending.BILLING"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-foreground.png",
+        "backgroundImage": "./assets/icons/adaptive-background.png",
+        "backgroundColor": "#ffffff",
+        "monochromeImage": "./assets/icons/adaptive-monochrome.png"
+      },
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.sandwichsudokupuzzle.app",
+      "supportsTablet": true
+    },
+    "web": {
+      "name": "Sandwich Sudoku - Brain Puzzle",
+      "bundler": "metro",
+      "favicon": "./assets/icons/app-icon.png"
+    },
+    "splash": {
+      "backgroundColor": "#F6F5F0"
+    },
+    "plugins": [
+      "./plugins/withPlayBilling",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-6230290323057717~2828087629",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true
+        }
+      ],
+      "./plugins/withReleaseConfig"
+    ],
+    "extra": {
+      "privacyPolicyUrl": "https://imediasystemsllc.com/sandwich-sudoku-privacy-policy.html"
+    }
+  }
+}

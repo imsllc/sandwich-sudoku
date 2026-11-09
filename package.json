@@ -1,0 +1,39 @@
+{
+  "name": "sandwich-sudoku",
+  "version": "1.0.5",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "puzzles": "tsx scripts/generate-puzzles.ts",
+    "icons": "node scripts/generate-icons.cjs",
+    "privacy": "node scripts/generate-privacy-policy.cjs",
+    "version:upload": "node scripts/bump-version.cjs"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~55.0.0",
+    "expo-keep-awake": "55.0.8",
+    "expo-status-bar": "~55.0.6",
+    "expo-system-ui": "~55.0.22",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.10",
+    "react-native-google-mobile-ads": "16.0.3",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-svg": "15.15.3",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.2.0",
+    "jimp-compact": "0.16.1",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.2"
+  }
+}
